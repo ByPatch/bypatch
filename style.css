@@ -1,0 +1,508 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+.logo{
+    height: 10rem;
+}
+
+@font-face {
+    font-family: marvel;
+    src: url("images/BlackberryJamPersonalUse-rXOB.ttf");
+}
+
+
+@font-face {
+    font-family: gbold;
+    src: url("images/GoldleafBoldPersonalUseBold-eZ4dO.ttf");
+}
+
+@font-face {
+    font-family: progressp;
+    src: url("images/ProgressPersonalUse-EaJdz.ttf");
+}
+
+@font-face {
+    font-family: cool;
+    src: url("images/coolvetica.rg-regular.otf");
+}
+
+body{
+    scroll-behavior: smooth;
+}
+
+nav .row{
+    text-align: end;
+}
+
+nav .row a{
+    width: 191px;
+    margin-right: 1rem;
+    padding: 0;
+}
+
+nav .row a img:hover{
+    border: 2px solid red;
+}
+
+.list-group a{
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+    text-decoration: none;
+    color: black;
+    font-family: cool;
+}
+
+.about{
+    margin-top: 2rem;
+}
+
+.list-group a img{
+    margin-right: 1rem;
+}
+
+.list-group a:hover img {
+    transform: scale(1.5);
+}
+
+.list-group a span{
+    display: inline-block;
+    position: relative;
+    color: black;
+}
+
+.list-group a span:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+  
+.list-group a span:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.social ul {
+    list-style: none;
+    padding: 0;
+}
+
+.social ul {
+    padding: 0;
+    font-size: 2em;}
+
+.social ul  li {
+    list-style: none;
+    color: black;
+}
+
+.social ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.social ul li a:hover{
+    color: #00c2cb;
+}
+
+.social ul li .grow {
+        transition: all .2s ease-in-out;}
+
+.social ul li:hover {
+          transform: scale(1.5);
+        }
+
+.navBar{
+    position: fixed;
+    height: 100%;
+    box-shadow: 10px 0 5px -2px #888;
+}
+
+nav.fix { 
+    position:fixed; 
+    top:0;
+}
+
+.list-group a span.active {
+    background-color: #3b49df;
+    border-radius:30px;
+    transition: 0.3s;
+}
+
+
+.page-outer{
+    flex: 1;
+}
+
+col-md-12{
+    margin-left: 160px;
+}
+
+.headrow{
+    background-image: url("images/rename-bg.png.avif");
+    height: 5rem;
+    color: #00c2cb;
+}
+
+.home-page{
+    height: 100vh;
+}
+
+.home-pageLogo{
+    padding-top: 3rem;
+}
+
+.home-pageLogoText{
+    font-family: marvel;
+    text-decoration: underline #00c2cb;
+}
+
+
+.container-fluid{
+    margin-right: 0;
+    scroll-snap-type: y mandatory;
+    flex-basis: 50%;
+    max-height: 100vh;
+    overflow-y: scroll;
+    border: 2px solid #00c2cb;
+}
+
+.contact-head{
+    padding-top: 2rem;
+    font-family: progressp;
+}
+
+.form-group label{
+    margin-bottom: 1rem;
+    font-family: gbold;
+    font-size: 1.5rem;
+}
+
+.form-group{
+    margin-bottom: 1rem;
+}
+
+.home-page1{
+    height: 100vh;
+    background-image: url("images/mohammad-rahmani-N5bT5RctFZ8-unsplash.jpg");
+    background-size: cover;
+    -webkit-background-size:cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-family: "poppins",sans-serif;
+}
+
+.wrapper1{
+    position: relative;
+    top: 22%;    
+}
+
+.wrapper1 .static-txt{
+    color: #fff;
+    font-size: 60px;
+    font-weight: 400;
+}
+
+.typewrite{
+    list-style: none;
+    color: #ff4c29;
+    font-size: 60px;
+    font-weight: 500;
+    position: relative;
+    text-decoration: none;
+    cursor: default;
+    pointer-events: none;
+}
+
+.wrapper1 p{
+    color: #fff;
+    font-size: 18px;
+    margin: 0;
+    line-height: 35px;
+}
+
+.wrapper1-ctn{
+    background: #00c2cb;
+    color: black;
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.wrapper1-ctn:hover{
+    background: #0087ca;
+    color: white;
+}
+
+.responsive{
+    max-width: 100%;
+    height: auto;
+}
+
+.about-us{
+    font-family: gbold;
+    font-size: 2rem;
+    float: left;
+    position: relative;
+}
+
+.about-text{
+    display: inline-block;
+    text-align: center;
+    max-height: 420px;
+    vertical-align: middle;
+    padding-top: 12rem;
+}
+
+.child{
+    scroll-snap-align: start;
+}
+
+.contact-home{
+    background-image: url("images/pexels-alex-andrews-821754.jpg");
+    height: 100%;
+    width: 100%;
+}
+
+.form1{
+    padding-top: 2rem; 
+    width: 80%;
+    margin: 0 auto;
+    padding-left: 2rem;
+}
+
+.form-a{
+    float: left;
+    width: 40%;
+    margin-right: 1rem;
+}
+
+.form-b{
+    display: inline-block;
+    width: 40%;
+}
+
+.form-submit{
+    width: 81%;
+    text-align: center;
+}
+
+#navBtn{
+    background: #00c2cb;
+    height: 30px;
+}
+
+
+@media only screen and (max-width:320px){
+    .form-b{
+        display: block;
+        width: 80%;
+    }
+    .form-a{
+        width: 80%;
+    }
+    .form-submit{
+        margin-top: 1rem;
+    }
+}
+
+@media only screen and (max-width:1005px){
+    .responsive{
+        width: 500px;
+    }
+    .about-text{
+        height: 240px;
+    }
+    .col-12{
+        padding: 0;
+        text-align: center;
+    }
+    section{
+        margin: 0;
+    }
+    .wrapper1{
+        text-align: center;
+    }
+    .about-us{
+        top: 0;
+        margin-left: 2rem;
+    }
+    .about-text{
+        padding: 0;
+    }
+    .form-group label{
+        margin: 0;
+    }
+    .form-group textarea{
+        height: 100px;
+    }
+    .form-group{
+        margin: 0;
+    }
+    .form1{
+        padding-top: 0;
+    }
+}
+
+@media only screen and (max-height:600px){
+    .logo img{
+        max-height: 10rem;
+    }
+    .list-group{
+        padding: 0;
+    }
+    .list-group a{
+        margin-left: 1em;
+        padding: 0;
+    }
+    .social ul{
+        font-size: 1.5em;
+        margin-top: 2rem;
+    }
+    nav{
+        width: 160px;
+    }
+    .responsive{
+        width: 200px;
+    }
+    .about-text{
+        height: 240px;
+    }
+    .col-12{
+        padding: 0;
+        text-align: center;
+    }
+    section{
+        margin: 0;
+    }
+    .wrapper1{
+        text-align: center;
+    }
+    .about-us{
+        top: 0;
+        margin-top: 3rem;
+    }
+    .about-text{
+        padding: 0;
+    }
+    .form-group label{
+        margin: 0;
+    }
+    .form-group textarea{
+        height: 70px;
+    }
+    .contact-head{
+        padding: 0;
+    }
+    .home-pageLogo{
+        padding: 0;
+    }
+    .form-b{
+        display: block;
+        width: 80%;
+    }
+    .form-a{
+        width: 80%;
+    }
+    .form-submit{
+        margin-top: 1rem;
+    }
+}
+
+@media only screen and (max-height:320px){
+    .wrapper1{
+        top: 0;
+    }
+    .about-us{
+        font-size: 1.5rem;
+    }
+    .form-group label{
+        font-size: 1rem;
+    }
+    .form-group textarea{
+        height: 50px;
+    }
+    .form-submit{
+        margin-top: 0.5rem;
+    }
+    .logo img{
+        height: 3rem;
+    }
+    .list-group{
+        padding: 0;
+    }
+    .list-group a{
+        margin-left: 1em;
+        padding: 0;
+    }
+    .social ul{
+        font-size: 1.5em;
+        margin-top: 2rem;
+    }
+    .about{
+        margin: 0;
+    }
+    .social ul{
+        margin: 0;
+        font-size: 1rem;
+    }
+    .about-us{
+        margin: 0;
+        margin-left: 2rem;
+    }
+}
+
+@media only screen and (min-width:1005px){
+    section{
+        margin-left: 160px;
+    }
+    .wrapper1{
+        padding-left: 40%;
+    }
+    .responsive{
+        width: 400px;
+    }
+    .about-us {
+    top: 50%;
+    margin-top: 3rem;
+}
+}
+
+
+.loader-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("images/Clean\ LineStyle\ Logo_free\ \(online-video-cutter.com\).gif");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .loader {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    animation: loader 5s infinite ease;
+    
+  }
+  .loader-inner {
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+    background-color: #fff;
+    animation: loader-inner 2s infinite ease-in;
+  }
+  
+  
